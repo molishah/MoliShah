@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images2/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>B.Tech. Graduate</p>
+                <h1>Hi, I'm <span>Moli Shah</span><br>From <a id="banswara" href="https://www.google.com/maps/place/Banswara,+Rajasthan+327001/">Banswara, Rajasthan</a></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images2/IMG-20220329-WA0023.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptates nemo sapiente enim adipisci accusantium ad fuga minima iste quidem culpa voluptatibus, odio, vero incidunt aperiam minus deserunt explicabo in!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br><ul>
+                                <li><i class="fa-sharp fa-solid fa-laptop-code"></i>  C/C++</li>
+                                <li><i class="fa-brands fa-python"></i>  Python</li>
+                                <li><i class="fa-brands fa-js"></i>  Javascript</li>
+                            </ul></li>
+                            <li><span>Frameworks/Libraries</span><br><ul>
+                                <li><i class="fa-solid fa-mobile-screen-button"></i> Flutter</li>
+                                <li><i class="fa-solid fa-fire"></i> Firebase</li>
+                                <li><i class="fa-brands fa-react"></i> React.js</li>
+                                <li><i class="fa-solid fa-database"></i> MySQL</li>
+                            </ul></li>
+                            <li><span>Additional Tools/Abilities</span><br> MS Excel, MS PowerPoint, Video Editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023 - Present</span><br><strong>Software Developer Intern at Convergence Catalyst</strong><br>Leading the end-to-end development of a mobile application for Convergence Catalyst, overseeing all aspects of the project, from initial design to implementation, to create a cutting-edge and user-centric product. </li>
+                
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>B.Tech. from <strong><a id="svnit" href="https://www.svnit.ac.in/">Sardar Vallabhbhai National Institute of Technology, Surat</a></strong><br> Current CGPA - 8.89</li>
+                            <li><span>2020</span><br>Intermediate(CBSE) from<strong> Shiv Jyoti Convent School, Kota</strong><br> Percentage - 87.8%</li>
+                            <li><span>2018</span><br> Matriculation(CBSE) from<strong>St. Paul's Sr. Sec. School, Banswara</strong><br> Percentage - 92%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Sevices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda accusantium cumque debitis nam. Omnis aliquam quisquam quas! Fugiat, consectetur sed?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda accusantium cumque debitis nam. Omnis aliquam quisquam quas! Fugiat, consectetur sed?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Data Science</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda accusantium cumque debitis nam. Omnis aliquam quisquam quas! Fugiat, consectetur sed?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images2/work11.png" >
+                    <div class="layer">
+                        <h3><strong>E-Commerce Website</strong></h3>
+                        <p>A responsive and visually appealing frontend model for an ecommerce website, specializing in the sale of clothing items, showcasing seamless user experience and intuitive navigation.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3><strong>AI Radio - Music App </strong> </h3>
+                        <p>This app connects you to the talented people around the world and stream their songs.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images2/work33.png" >
+                    <div class="layer">
+                        <h3><strong>Olympic Medal Predictor</strong></h3>
+                        <p>Machine learning model to forecast a country's future medal count in a specific sport for upcoming Olympic Games, enabling data-driven decision-making in sports strategy and performance analysis.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> shah.moli98@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8005547242</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/molishah/"><i class="fa fa-linkedin" ></i></a>
+                        <a href="https://www.instagram.com/mollyyy__08/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/molishah.11/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/MoliShah08"><i class="fab fa-twitter-square"></i></a>
+                        
+                        
+                    </div>
+                    <a href="images2/my_cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @2023<i class="fas fs-heart"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = documet.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>
