@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="/static/fontawesome-all.css">
     <link rel="stylesheet" href="/static/fontawesome.css">
     <link rel="stylesheet" href="/static/fa-brands.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/static/fa-solid.css">
     <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -29,95 +30,43 @@
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i> 
             </nav>
-            <div class="header-text">
-                <p>B.Tech. Graduate</p>
-                <h1>Hi, I'm <span>Moli Shah</span><br>From <a id="banswara" href="https://www.google.com/maps/place/Banswara,+Rajasthan+327001/">Banswara, Rajasthan</a></h1>
-            </div>
-        </div>
-    </div>
-    <!-- -------------about-------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images2/IMG-20220329-WA0023.jpg" >
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I'm currently a student pursuing a Bachelors in Technology from Sardar Vallabhbhai National Institute of Technology, Surat, where I am gaining a strong foundation in engineering principles and problem-solving techniques. Alongside my studies, I am a coding enthusiast with relevant skills and a major interest in the field, continuously expanding my knowledge and seeking opportunities to apply my coding expertise.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br><ul>
-                                <li><i class="fa-sharp fa-solid fa-laptop-code"></i>  C/C++</li>
-                                <li><i class="fa-brands fa-python"></i>  Python</li>
-                                <li><i class="fa-brands fa-js"></i>  Javascript</li>
-                            </ul></li>
-                            <li><span>Frameworks/Libraries</span><br><ul>
-                                <li><i class="fa-solid fa-mobile-screen-button"></i> Flutter</li>
-                                <li><i class="fa-solid fa-fire"></i> Firebase</li>
-                                <li><i class="fa-brands fa-react"></i> React.js</li>
-                                <li><i class="fa-solid fa-database"></i> MySQL</li>
-                            </ul></li>
-                            <li><span>Additional Tools/Abilities</span><br> MS Excel, MS PowerPoint, Video Editing</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>May 2023 - Present</span><br><strong>Software Developer Intern at Convergence Catalyst</strong><br>Leading the end-to-end development of a mobile application for Convergence Catalyst, overseeing all aspects of the project, from initial design to implementation, to create a cutting-edge and user-centric product. </li>
-                
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020-Present</span><br>B.Tech. from <strong><a id="svnit" href="https://www.svnit.ac.in/">Sardar Vallabhbhai National Institute of Technology, Surat</a></strong><br> Current CGPA - 8.89</li>
-                            <li><span>2020</span><br>Intermediate(CBSE) from<strong> Shiv Jyoti Convent School, Kota</strong><br> Percentage - 87.8%</li>
-                            <li><span>2018</span><br> Matriculation(CBSE) from<strong>St. Paul's Sr. Sec. School, Banswara</strong><br> Percentage - 92%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------services---------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Sevices</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>As a skilled web developer, I possess comprehensive knowledge of frontend tools and technologies such as HTML, CSS, JavaScript, React.js, and Bootstrap. With a portfolio of successful projects, I have demonstrated my ability to effectively utilize these skills to create dynamic and user-friendly websites.</p>
-                    <a href="project.html">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>App Development</h2>
-                    <p> Well-versed in utilizing tools and technologies such as Flutter and Firebase to create robust and user-friendly mobile applications. Having successfully completed multiple projects, I have demonstrated my ability to design and develop feature-rich apps that deliver an exceptional user experience.</p>
-                    <a href="project.html">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>Data Science</h2>
-                    <p>As a data science enthusiast with expertise in machine learning and a strong grasp of other relevant technologies, I have successfully applied my skills through a project, demonstrating my ability to analyze and derive valuable insights from data.</p>
-                    <a href="project.html">Learn more</a>
-                </div>
-            </div>
         </div>
     </div>
     <!-- ------------portfolio---------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title"><span>A</span>bout</h1>
+            <p id="ab-text">I'm currently a student pursuing a Bachelors in Technology from Sardar Vallabhbhai National Institute of Technology, Surat, where I am gaining a strong foundation in engineering principles and problem-solving techniques. Alongside my studies, I am a coding enthusiast with relevant skills and a major interest in the field, continuously expanding my knowledge and seeking opportunities to apply my coding expertise.</p>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a skilled web developer, I possess comprehensive knowledge of frontend tools and technologies such as HTML, CSS, JavaScript, React.js, and Bootstrap. With a portfolio of successful projects, I have demonstrated my ability to effectively utilize these skills to create dynamic and user-friendly websites.</p>
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Development</h2>
+                    <p> Well-versed in utilizing tools and technologies such as Flutter and Firebase to create robust and user-friendly mobile applications. Having successfully completed multiple projects, I have demonstrated my ability to design and develop feature-rich apps that deliver an exceptional user experience.</p>
+                    
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Data Science</h2>
+                    <p>As a data science enthusiast with expertise in machine learning and a strong grasp of other relevant technologies, I have successfully applied my skills through a project, demonstrating my ability to analyze and derive valuable insights from data.</p>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>W</span>eb <span>D</span>evelopment <span>P</span>rojects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images2/work11.png" >
+                    <img src="project/cara.png" >
                     <div class="layer">
                         <h3><strong>E-Commerce Website</strong></h3>
                         <p>A responsive and visually appealing frontend model for an ecommerce website, specializing in the sale of clothing items, showcasing seamless user experience and intuitive navigation.</p>
@@ -125,23 +74,73 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" >
+                    <img src="project/coffee.png" >
                     <div class="layer">
-                        <h3><strong>AI Radio - Music App </strong> </h3>
+                        <h3><strong>Coffee Shop</strong> </h3>
                         <p>This app connects you to the talented people around the world and stream their songs.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images2/work33.png" >
+                    <img src="project/apnasafar.png">
                     <div class="layer">
-                        <h3><strong>Olympic Medal Predictor</strong></h3>
+                        <h3><strong>Apna Safar</strong></h3>
+                        <p>Machine learning model to forecast a country's future medal count in a specific sport for upcoming Olympic Games, enabling data-driven decision-making in sports strategy and performance analysis.</p>
+                        <a href="https://teamerror-coders.github.io/Teamerror/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- ------------portfolio---------- -->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>A</span>pp <span>D</span>evelopment <span>P</span>rojects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3><strong>AI Radio</strong></h3>
+                        <p>A responsive and visually appealing frontend model for an ecommerce website, specializing in the sale of clothing items, showcasing seamless user experience and intuitive navigation.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3><strong>To-Do List App</strong> </h3>
+                        <p>This app connects you to the talented people around the world and stream their songs.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3><strong>Tic-Tac-Toe</strong></h3>
                         <p>Machine learning model to forecast a country's future medal count in a specific sport for upcoming Olympic Games, enabling data-driven decision-making in sports strategy and performance analysis.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="project.html" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>M</span>achine <span>L</span>earning <span>P</span>rojects</h1>
+            <div class="work-list">
+                <div id="olymic" class="work">
+                    <img src="images2/work33.png" >
+                    <div class="layer">
+                        <h3><strong>Olympic Predictor</strong></h3>
+                        <p>A responsive and visually appealing frontend model for an ecommerce website, specializing in the sale of clothing items, showcasing seamless user experience and intuitive navigation.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- -----------contact------------ -->
