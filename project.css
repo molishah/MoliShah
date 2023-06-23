@@ -272,9 +272,6 @@ transition: height 0.5s;
     background: #ff004f;
 }
 
-#olymic{
-    width: 30%;
-}
 /* -----------------contact------------------ */
 .contact-left{
     flex-basis: 35%;
